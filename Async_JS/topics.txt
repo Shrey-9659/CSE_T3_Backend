@@ -1,0 +1,6 @@
+setTimeout -- clearTimeout
+setInterval -- clearInterval
+Callback Functions -- Pyramin of doom
+Promises -- Promise hell
+Fetch
+Async/Await
