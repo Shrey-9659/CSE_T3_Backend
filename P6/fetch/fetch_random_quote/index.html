@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Container UI</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+        transform: translateY(-5px);
+    }
+
+    .container h2 {
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .container p {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Welcome to Random Quote Generator</h2>
+    <p id="quote">This is a clean and modern container design with a smooth hover effect.</p>
+    <button id="btn" class="btn">Get Started</button>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
