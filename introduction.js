@@ -171,3 +171,25 @@
 //     }
 // }
 // console.log("third")
+
+// Status Code
+// 1xx - Informational Codes
+// 2xx - Success Codes
+// 3xx - Reicrectional Codes
+// 4xx - Client-Side Error Codes
+// 5xx - Server-Side Error Codes
+
+// Headers
+// Request Headers
+// Response Headers
+// Security Headers
+// Custom Headers : X-key
+
+// 22.11.00 -- xx.yy.zz
+// xx -- Major update
+// yy -- Minor update
+// zz -- Patch update
+
+// ^22.11.00 -- (Minor, Patch)
+// ~22.11.00 -- (Patch)
+// 22.11.00 -- (No update)
