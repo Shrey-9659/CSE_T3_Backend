@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#screen {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(183, 239, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    height: 72%;
+    width: 70%;
+    background-color: rgb(30, 74, 37);
+    border-radius: 15px;
+    box-shadow: 1px 5px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: large;
+    /* margin-top: 2rem; */
+    padding: 2rem; /* Added padding for better spacing */
+}
+
+h1 {
+    margin-bottom: 20px; /* Spacing between title and info */
+}
+
+#info {
+    font-size: 1.5rem;
+    gap: 1.5rem;
+    text-align: left;
+    width: 80%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; Center-align the information */
+    justify-content: center; /* Center vertically */
+    flex-grow: 1; /* Allow this section to grow */
+}

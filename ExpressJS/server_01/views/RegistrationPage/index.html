@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#screen {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(183, 239, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    height: 72%;
+    width: 70%;
+    background-color: rgb(30, 74, 37);
+    border-radius: 15px;
+    box-shadow: 1px 5px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#contact-form {
+    width: 100%;
+    color: white;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+#button {
+    margin-top: 15px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(39, 38, 38, 0.3);
+    cursor: pointer;
+    background-color: rgb(50, 100, 50);
+    color: white;
+    font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="card">
+            <form action="/home/submit" method="POST" id="contact-form">
+                <h2>Contact Us</h2>
+                
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button type="submit" id="button">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

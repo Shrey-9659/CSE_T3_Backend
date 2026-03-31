@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#screen{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(183, 239, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    height: 72%;
+    width: 70%;
+    background-color: rgb(30, 74, 37);
+    border-radius: 15px;
+    box-shadow: 1px 5px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(39, 38, 38, 0.3);
+
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#screen{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(183, 239, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+
+    height: 72%;
+    width: 70%;
+    background-color: rgb(30, 74, 37);
+    border-radius: 15px;
+    box-shadow: 1px 5px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    margin: 15px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(39, 38, 38, 0.3);
+
+}
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="card">
+            <form action="/home/form" method="GET">
+                <button type="submit" id="button">Submit</button>
+            </form>
+            <form action="/home/search" method="GET">
+                <button type="submit" id="button">Search</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
